@@ -1,0 +1,39 @@
+@import "../../../sass/variable/variables.scss";
+
+.catalogCard {
+    width: 370px;
+    height: 486px;
+
+    &_image {
+
+        &_img {
+            width: 370px;
+            height: 221px;
+            object-fit: contain;
+        }
+    }
+
+    &_info {
+        padding: 25px;
+        background-color: rgba(33, 36, 43, 1);
+
+        &_name {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 28px;
+            text-align: left;
+            color: $white_color;
+        }
+
+        &_description {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            text-align: left;
+            color: $grey_color;
+            margin: 15px 0;
+        }
+
+
+    }
+}

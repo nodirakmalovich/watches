@@ -1,0 +1,13 @@
+@import "../../../sass/mixin/mixin.scss";
+
+.advertisment {
+    margin: 100px 0;
+
+    &_row {
+        @include flex_style;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+
+}

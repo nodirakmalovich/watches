@@ -1,0 +1,28 @@
+@import '../../../sass/variable/variables.scss';
+@import '../../../sass/mixin/mixin.scss';
+
+.miniInfo {
+    width: 270px;
+    height: 235px;
+
+    &_title {
+        width: 199px;
+        height: 75px;
+        font-size: 22px;
+        font-weight: 800;
+        line-height: 36px;
+        text-align: left;
+        color: $white_color;
+    }
+
+    &_description {
+        width: 270px;
+        height: 61px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        text-align: left;
+        color: $grey_color;
+    }
+
+}

@@ -1,0 +1,84 @@
+@import '../../../sass/mixin/mixin.scss';
+@import '../../../sass/variable/variables.scss';
+
+.hero {
+
+    &_row {
+        @include flex_style;
+        justify-content: space-between;
+
+        &_right {
+
+            &_card {
+
+                &_content {
+
+                    &_price {
+                        @include flex_style;
+                        justify-content: space-between;
+
+                        &_text {
+                            font-size: 18px;
+                            font-weight: 700;
+                            line-height: 28px;
+                            text-align: left;
+                            color: $white_color;
+                        }
+
+                        &_btn {
+                            @include flex_style;
+                            gap: 5px;
+
+                            &_button {
+                                width: 11px;
+                                height: 11px;
+                                border: none;
+                                border-radius: 50%;
+                                background: rgba(141, 121, 102, 1);
+                                cursor: pointer;
+
+                                &:focus {
+                                    border: 1px solid white;
+                                }
+                            }
+                        }
+                    }
+
+                    &_info {
+                        margin-top: 25px;
+                        @include flex_style;
+                        justify-content: space-between;
+                        transition: 0.3s ease-in-out;
+
+                        &_link {
+                            font-size: 23px;
+                            font-weight: 700;
+                            line-height: 28px;
+                            text-align: left;
+                            text-decoration: none;
+                            color: $white_color;
+                            transition: 0.3s ease-in-out;
+                        }
+
+                        &_image{
+                            transition: 0.3s ease-in-out;
+                        }
+
+                        &:hover &_link {
+                            background: linear-gradient(90deg, #B1A48F 0%, #9A836C 100%);
+                            -webkit-background-clip: text;
+                            background-clip: text;
+                            color: transparent;
+                            transition: 0.3s ease-in-out;
+                        }
+
+                        &:hover &_image{
+                            transform: translateX(10px);
+                            transition: 0.3s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

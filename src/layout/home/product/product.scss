@@ -1,0 +1,22 @@
+@import '../../../sass/mixin/mixin.scss';
+
+.product {
+
+    &_buttons {
+        @include flex_style;
+        justify-content: space-between;
+    }
+
+    &_row {
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    &_btn{
+        @include flex_style;
+        justify-content: center;
+        margin: 100px 0;
+    }
+}

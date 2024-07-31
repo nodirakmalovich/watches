@@ -1,0 +1,11 @@
+@import '../../../sass/mixin/mixin.scss';
+
+.catalog{
+    margin-top: 50px;
+
+    &_row{
+        @include flex_style;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+}

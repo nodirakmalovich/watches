@@ -1,0 +1,76 @@
+@import '../../../sass/mixin/mixin.scss';
+@import '../../../sass/variable/variables.scss';
+
+.navbar {
+    padding: 20px 0;
+
+    &_row {
+        width: 100%;
+        @include flex_style;
+        justify-content: space-between;
+
+        &_menu {
+            @include flex_style;
+            justify-content: space-between;
+            gap: 30px;
+            list-style-type: none;
+
+            &_item {
+
+                &_link {
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 32.78px;
+                    letter-spacing: 0.12em;
+                    text-align: left;
+                    color: white;
+                    text-decoration: none;
+                }
+
+                &_link:focus {
+                    font-size: 24px;
+                    font-weight: 800;
+                }
+            }
+        }
+
+        &_actions {
+
+            @include flex_style;
+            gap: 30px;
+
+            &_basket {
+                width: 41px;
+                height: 41px;
+            }
+
+            &_select {
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 28px;
+                background-color: transparent;
+                color: white;
+                border: none;
+                outline: none;
+
+                &_option {
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 28px;
+                    background-color: $bg_color;
+                    color: white;
+                    border: none;
+                    outline: none;
+                }
+            }
+
+            &_logIn {
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 28px;
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}

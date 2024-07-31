@@ -1,0 +1,6 @@
+@import '../../../sass/mixin/mixin.scss';
+
+.lastInfo_row{
+    @include flex_style;
+    justify-content: space-between;
+}

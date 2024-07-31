@@ -1,0 +1,27 @@
+@import '../../../sass/variable/color.scss';
+
+.reverseMainBtn {
+    background-color: transparent;
+    color: white;
+    border: 3px solid;
+    border-image-source: linear-gradient(270deg, #9A836C 0%, #B1A48F 100%);
+    border-image-slice: 1;
+    padding: 12px 40px;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 24.59px;
+    letter-spacing: 0.12em;
+    text-align: center;
+    cursor: pointer;
+    background: linear-gradient(90deg, #B1A48F 0%, #9A836C 100%);
+    color: $white_color;
+    -webkit-background-clip: unset;
+    background-clip: unset;
+}
+
+.reverseMainBtn:hover {
+    background: linear-gradient(90deg, #B1A48F 0%, #9A836C 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}

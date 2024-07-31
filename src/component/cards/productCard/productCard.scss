@@ -1,0 +1,61 @@
+@import '../../../sass/variable/variables.scss';
+@import '../../../sass/mixin/mixin.scss';
+
+.productCard {
+    position: relative;
+    background-color: $bg_color;
+
+    &_heart {
+        position: absolute;
+        top: 16px;
+        left: 19px;
+    }
+
+    &_image {
+        &_item {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &_body {
+        padding: 24px;
+
+        &_price {
+            @include flex_style;
+            justify-content: space-between;
+
+            &_name {
+                color: $white_color;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 28px;
+                text-align: left;
+            }
+
+            &_price {
+                color: $white_color;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 28px;
+                text-align: left;
+            }
+
+        }
+
+        &_description {
+            color: $grey_color;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            text-align: left;
+            padding: 12px 0;
+        }
+
+        &_buttons{
+            @include flex_style;
+            flex-wrap: nowrap;
+            gap: 20px;
+        }
+    }
+}

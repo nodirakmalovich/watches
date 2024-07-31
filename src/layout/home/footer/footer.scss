@@ -1,0 +1,54 @@
+@import '../../../sass/mixin/mixin.scss';
+@import '../../../sass/variable/variables.scss';
+
+.footer {
+        margin-top: 100px;
+    &_row {
+        @include flex_style;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: start;
+
+    }
+
+    &_menu {
+
+        &_first {
+            width: 331px;
+            height: 203px;
+        }
+
+        list-style-type: none;
+
+        &_item {
+            margin: 15px 0;
+
+
+            &_link {
+                color: $grey_color;
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 21.86px;
+                text-align: left;
+
+                &_logo {
+                    font-size: 28px;
+                    font-weight: 700;
+                    line-height: 38.25px;
+                    letter-spacing: 0.12em;
+                    text-align: left;
+                    color: $white_color;
+                }
+
+                &_default{
+                    color: $white_color;
+                }
+
+                &_span{
+                    color: $white_color;
+                }
+            }
+        }
+    }
+}

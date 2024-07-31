@@ -1,0 +1,15 @@
+@import '../../../sass/mixin/mixin.scss';
+
+.topMenu_row {
+    margin-top: 96px;
+    @include flex_style;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    &_image {
+        width: 250px;
+        height: 250px;
+        object-fit: contain;
+    }
+}
